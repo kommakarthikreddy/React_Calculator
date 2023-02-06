@@ -1,0 +1,44 @@
+body {
+    background-color: aqua;
+}
+
+.grid {
+    margin-top:5rem;
+    display: grid;
+    grid-template-columns: repeat(4, 6rem);
+    grid-template-rows: minmax(1rem, auto) repeat(10,3rem);
+    margin:0 center;
+}
+
+.heading {
+    font-size: 4rem;
+    color:orange;
+    background-color: beige;
+}
+
+.output {
+    grid-column: 1 / -1;
+    display: flex;
+    background-color: black;
+    color: white;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+button {
+    font-size: 1.5rem;
+}
+
+.span-two {
+    grid-column: span 2;
+}
+.prev-class {
+    font-size: 1rem;
+}
+
+.cur-class {
+    font-size: 2rem;
+}
